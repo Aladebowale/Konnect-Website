@@ -80,14 +80,6 @@ import React from "react";
 import Konn3ctHeader from "./Konn3ctHeader";
 import Footer from "../Components/kfooter";
 
-
-/**
- * ChangelogPage
- *
- * - Uses Tailwind utility classes
- * - Replace `image` values with real image imports or URLs
- */
-
 const logs = [
   {
     date: "August 25, 2025",

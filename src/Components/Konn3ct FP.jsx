@@ -49,14 +49,8 @@ const FeaturesPage = () => {
   }, [isHovered]);
 
   return (
-    <div className="relative z-10 min-h-screen w-full bg-white text-gray-900 font-sans">
-      {/* ====== Navbar ====== */}
-      <Konn3ctHeader />
-
-      {/* ====== Hero Section (with grid) ====== */}
-      <section className="relative text-center mt-24 px-6 md:px-12 overflow-hidden">
-        {/* Grid background for hero only */}
-        <div
+    <div className="relative z-10 min-h-screen w-full text-gray-900 font-sans">
+      <div
           className="absolute inset-0 -z-10"
           style={{
             backgroundImage: `
@@ -65,6 +59,13 @@ const FeaturesPage = () => {
             `,
           }}
         />
+      {/* ====== Navbar ====== */}
+      <Konn3ctHeader />
+
+      {/* ====== Hero Section (with grid) ====== */}
+      <section className="relative text-center mt-24 px-6 md:px-12 overflow-hidden">
+        {/* Grid background for hero only */}
+       
 
         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
           Every feature your team
@@ -77,7 +78,7 @@ const FeaturesPage = () => {
           insights, it keeps projects moving without friction.
         </p>
 
-        <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-6">
+        <button className="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition mt-6">
           Sign up, It's Free
         </button>
 

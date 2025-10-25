@@ -4,8 +4,7 @@ import frame from "../Images/Konn3ct Images/Frame 1444.png";
 const FeatP2 = () => {
   return (
     <div className="max-w-full mx-auto px-6 md:px-12 rounded-3xl overflow-hidden text-white">
-      <div className="flex flex-col md:flex-row items-center justify-between gap-8 bg-gradient-to-b from-[#03173f] to-[#1a4696] rounded-3xl  px-6 md:px-10 shadow-lg">
-        
+      <div className="flex flex-col md:flex-row items-center justify-between gap-8 bg-gradient-to-b from-[#03173f] to-[#1a4696] rounded-3xl  px-6 md:px-10 shadow-lg">        
         {/* Left Content */}
         <div className="md:w-1/2 text-center md:text-left">
           <h3 className="text-3xl md:text-4xl font-bold mb-3 leading-tight">
