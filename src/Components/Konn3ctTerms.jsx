@@ -7,17 +7,17 @@ const Konn3ctTC = () => {
     <div className="min-h-screen flex flex-col text-gray-800">
       {/* Header */}
        <div
-        className="absolute top-0 left-0 w-full h-[61vh] -z-10"
+        className="absolute top-0 left-0 w-full h-[41vh] -z-10"
         style={{
           backgroundImage: `
-            repeating-linear-gradient(to right, rgba(128, 128, 128, 0.08) 0, rgba(128, 128, 128, 0.08) 1px, transparent 1px, transparent 100px),
-            repeating-linear-gradient(to bottom, rgba(128, 128, 128, 0.08) 0, rgba(128, 128, 128, 0.08) 1px, transparent 1px, transparent 100px)
+            repeating-linear-gradient(to right, rgba(128, 128, 128, 0.08) 0, rgba(128, 128, 128, 0.08) 1px, transparent 1px, transparent 90px),
+            repeating-linear-gradient(to bottom, rgba(128, 128, 128, 0.08) 0, rgba(128, 128, 128, 0.08) 1px, transparent 1px, transparent 40px)
           `,
         }}
       />
       <Konn3ctHeader />
 
-      <section className="text-center max-w-4xl mx-auto mb-16 mt-20">
+      <section className="text-center max-w-4xl mx-auto mb-16 mt-11">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-snug">
        Terms of Service
         </h1>
@@ -103,7 +103,7 @@ const Konn3ctTC = () => {
           </p>
         </div>
 
-      <div className="mt-12" />
+      <div className="mt-0" />
       </main>
 
       <Footer />

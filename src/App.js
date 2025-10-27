@@ -10,7 +10,8 @@ import PricingPage from "./Components/Kpricing";
 import AboutUs from "./Components/Konn3ctAbout";
 import Changelog from './Components/Konn3ctChangeL';
 import Konn3ctTC from "./Components/Konn3ctTerms";
-import Konn3ctDevs from "./Components/Konn3ctDevs"
+import Konn3ctPP from "./Components/KonnectPolicy";
+import Konn3ctDevs from "./Components/Konn3ctDevs";
 
 // import Konn3ctFooter from "./Components/Konn3ct 4";
 // import BoxGrid from "./Components/hold";
@@ -32,6 +33,7 @@ const App = () => {
       <Route path='/AboutUs' element={<AboutUs />} />
       <Route path='/ChangeLog' element={<Changelog />} />
       <Route path='/Konn3ctTC' element={<Konn3ctTC />} />
+      <Route path='/Konn3ctPP' element={<Konn3ctPP />} />
       <Route path='/Konn3ctDevs' element={<Konn3ctDevs />} />
 
          </Routes>

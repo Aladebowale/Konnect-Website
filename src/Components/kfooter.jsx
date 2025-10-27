@@ -30,7 +30,14 @@ const Footer = () => {
       {/* Top icons row */}
        
 
-     
+     <div
+  className="absolute inset-0 z-10 pointer-events-none"
+  style={{
+    background: 'linear-gradient(to bottom, rgba(0,0,0,0) 60%, rgba(0,0,0,1) 100%)',
+    maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))',
+    WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))',
+  }}
+/>
 
       {/* Main footer content */}
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-8">

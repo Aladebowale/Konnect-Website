@@ -10,27 +10,27 @@ const Konn3ctDevs = () => {
   return (
     // <div className="bg-white text-gray-900">
     <div className="min-h-screen font-sans text-gray-900">
-      <div
-        className="absolute top-0 left-0 w-full h-[58vh] -z-10"
+       <div
+        className="absolute top-0 left-0 w-full h-[41vh] -z-10"
         style={{
           backgroundImage: `
-            repeating-linear-gradient(to right, rgba(128, 128, 128, 0.08) 0, rgba(128, 128, 128, 0.08) 1px, transparent 1px, transparent 100px),
-            repeating-linear-gradient(to bottom, rgba(128, 128, 128, 0.08) 0, rgba(128, 128, 128, 0.08) 1px, transparent 1px, transparent 100px)
+            repeating-linear-gradient(to right, rgba(128, 128, 128, 0.08) 0, rgba(128, 128, 128, 0.08) 1px, transparent 1px, transparent 90px),
+            repeating-linear-gradient(to bottom, rgba(128, 128, 128, 0.08) 0, rgba(128, 128, 128, 0.08) 1px, transparent 1px, transparent 40px)
           `,
         }}
       />
       <Konn3ctHeader />
 
-      <section className="text-center max-w-4xl mx-auto mb-16 mt-16">
+      <section className="text-center max-w-4xl mx-auto mb-16 mt-11">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-snug">
           One platform to build
         </h1>
         {/* <p className="mt-4 text-xs max-w-sm mx-auto md:text-lg text-gray-900"> */}
-        <p className="mt-4 font-semibold text-xs md:text-lg max-w-sm mx-auto text-gray-700">
-          Develop custom video experiences on top of Konn3ct's core technology.
+        <p className="mt-2 font-normal text-xs  max-w-xs mx-auto text-gray-700">
+          Develop custom video experiences on top of <br /> Konn3ct's core technology.
         </p>
 
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition mt-6">
+        <button className="bg-blue-600 text-white px-2 py-1 rounded-lg font-semibold hover:bg-blue-700 transition mt-1">
           Start building
         </button>
       </section>
