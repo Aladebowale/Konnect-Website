@@ -107,7 +107,9 @@ const Konn3ctTC = () => {
       </main>
 
       <Footer />
+      
     </div>
+    
   );
 };
 

@@ -41,9 +41,6 @@ const LandingPage = () => {
                   placeholder="Enter your email address"
                   className="px-4 py-3 pr-28 w-full rounded-xl border-none text-black outline-none text-xs"
                 />
-                {/* <button className="px-6 py-3 bg-green-500 text-white font-medium rounded-lg hover:bg-green-600 transition">
-            Get started
-          </button> */}
                 <button className="absolute top-1/2 right-2 -translate-y-1/2 bg-[#34A853] font-medium text-white px-3 py-2 rounded-md text-xs hover:bg-green-800">
                   Get started
                 </button>
@@ -53,14 +50,49 @@ const LandingPage = () => {
             <p className="text-sm mt-2">Free Forever. No Credit Card.</p>
           </section>
 
-          
-
           {/* Feature Grid */}
           {/* <section className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto mt-20 px-6"> */}
 
-          {/* <div className="min-h-screen flex items-center justify-center p-10">
-            <div className="flex flex-cols-6 gap-4 h-36">
-              <div className="grid grid-cols gap-4">
+          <section className="relative top-[-100px] flex justify-center items-end gap-7  ">
+            <aside className="flex items-center gap-5">
+              <div className="flex flex-col gap-5">
+                <div className="h-24 w-[150px] bg-white"></div>
+                <div className="h-24 w-24 bg-white"></div>
+                <div className="h-24 w-24 bg-white"></div>
+              </div>
+              <div className="flex flex-col gap-5">
+                <div className="h-24 w-24 bg-white"></div>               
+                <div className="h-24 w-24 bg-white"></div>               
+                <div className="h-24 w-24 bg-white"></div>               
+                <div className="h-24 w-24 bg-white"></div>                               
+              </div>
+            </aside>
+
+            <div className="w-1/2 grid grid-cols-2 gap-5">
+              <div className="h-[150px]  bg-white rounded-md"></div>
+              <div className="h-[150px] bg-white rounded-md"></div>
+              <div className="h-[150px] bg-white rounded-md"></div>
+              <div className="h-[150px] bg-white rounded-md"></div>
+            </div>
+
+              <aside className="flex items-center gap-5">
+              <div className="flex flex-col gap-5">
+                <div className="h-24 w-24 bg-white"></div>
+                <div className="h-24 w-24 bg-white"></div>
+                <div className="h-24 w-24 bg-white"></div>
+                <div className="h-24 w-24 bg-white"></div>               
+              </div>
+              <div className="flex flex-col gap-5">
+                <div className="h-24 w-24 bg-white"></div>               
+                <div className="h-24 w-24 bg-white"></div>               
+                <div className="h-24 w-24 bg-white"></div>                               
+              </div>
+            </aside>
+          </section>
+
+          {/* <div className="min-h-screen flex items-center justify-center ">
+            <div className="flex flex-row gap-4 h-36">
+              <div className="flex flex-col gap-4">
                 <div className="bg-white w-24 h-24 flex items-center justify-center rounded-lg shadow text-[#1A4699]">
                   Note Taker
                 </div>
@@ -72,7 +104,7 @@ const LandingPage = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols gap-4">
+              <div className="flex flex-col gap-4">
                 <div className="bg-white w-24 h-full flex items-center justify-center rounded-lg shadow text-[#1A4699]">
                   Audio Boost
                 </div>
@@ -103,8 +135,8 @@ const LandingPage = () => {
               </div>
             </div>
 
-            <div className="flex  gap-4 h-36">
-              <div className="grid grid-cols gap-4">
+            <div className="flex flex-row gap-4 h-36">
+              <div className="flex flex-col gap-4">
                 <div className="bg-white w-24 h-24 flex items-center justify-center rounded-lg shadow text-[#1A4699]">
                   Transcriptions
                 </div>
@@ -119,7 +151,7 @@ const LandingPage = () => {
                 </div>
               </div>
 
-              <div className="flex flex-cols gap-4">
+              <div className="flex flex-col gap-4">
                 <div className="bg-white w-24 h-24 flex items-center justify-center rounded-lg shadow">
                   Dashboard
                 </div>
@@ -131,8 +163,6 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
-
-
           </div> */}
         </div>
         {/* </div> */}

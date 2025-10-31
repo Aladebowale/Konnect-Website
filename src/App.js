@@ -12,6 +12,8 @@ import Changelog from './Components/Konn3ctChangeL';
 import Konn3ctTC from "./Components/Konn3ctTerms";
 import Konn3ctPP from "./Components/KonnectPolicy";
 import Konn3ctDevs from "./Components/Konn3ctDevs";
+import EventsPage from "./Components/Konn3ctEvents"
+import EventDetails from "./Components/KonnectEventId";
 
 // import Konn3ctFooter from "./Components/Konn3ct 4";
 // import BoxGrid from "./Components/hold";
@@ -35,8 +37,14 @@ const App = () => {
       <Route path='/Konn3ctTC' element={<Konn3ctTC />} />
       <Route path='/Konn3ctPP' element={<Konn3ctPP />} />
       <Route path='/Konn3ctDevs' element={<Konn3ctDevs />} />
+      <Route path='/EventsPage' element={<EventsPage />} />
+      <Route path="/event/:id" element={<EventDetails />} />
+
+
 
          </Routes>
+      {/* <Route path='/Konn3ctDevs' element={<Konn3ctDevs />} /> */}
+
        </Router> 
 
     

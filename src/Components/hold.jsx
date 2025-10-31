@@ -1,85 +1,96 @@
-import React, { useState } from "react";
-import img1 from "../assets/workflow1.png";
-import img2 from "../assets/workflow2.png";
-import img3 from "../assets/workflow3.png";
-import img4 from "../assets/workflow4.png";
+import React from "react";
+import { useParams } from "react-router-dom";
+import { events } from "../Data/KEvents";
 
-export default function WorkspaceSection() {
-  const [active, setActive] = useState(0);
+const EventDetails = () => {
+  const { id } = useParams();
+  const event = events.find((e) => e.id === parseInt(id));
 
-  const features = [
-    {
-      title: "Workflows That Work for You",
-      description: "Automate follow-ups, track progress, and keep your team aligned.",
-      image: img1,
-    },
-    {
-      title: "Decisions Made Smarter",
-      description: "Gain insights powered by AI to make faster, data-driven decisions.",
-      image: img2,
-    },
-    {
-      title: "Collaborate Without Limits",
-      description: "Bring your team together in one seamless platform for teamwork.",
-      image: img3,
-    },
-    {
-      title: "Meet with Intelligence",
-      description: "AI-driven summaries and real-time transcription for efficient meetings.",
-      image: img4,
-    },
-  ];
+  if (!event) {
+    return <div className="p-8 text-center text-gray-500">Event not found</div>;
+  }
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-20">
-      {/* ===== Heading Section ===== */}
-      <div className="text-center mb-12">
-        <p className="text-blue-600 font-medium mb-2">The all-in-one workspace</p>
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-          Do your most important work, faster
-        </h2>
+    <div className="max-w-6xl mx-auto p-6 lg:p-12 font-sans">
+      {/* Header Image */}
+      <div className="rounded-lg overflow-hidden shadow-sm">
+        <img
+          src={event.image}
+          alt={event.title}
+          className="w-full h-[280px] object-cover"
+        />
       </div>
 
-      {/* ===== Content Grid ===== */}
-      <div className="flex flex-col md:flex-row items-center justify-between gap-10">
-        {/* ===== Left Side (Feature List) ===== */}
-        <div className="w-full md:w-1/2 flex flex-col gap-5">
-          {features.map((item, index) => (
-            <div
-              key={index}
-              onClick={() => setActive(index)}
-              className={`cursor-pointer transition-all border-l-4 pl-4 ${
-                active === index
-                  ? "border-blue-600 text-blue-700 scale-105"
-                  : "border-transparent text-gray-500 hover:text-gray-700 hover:scale-105"
-              }`}
+      {/* Date */}
+      <p className="text-sm text-gray-500 mt-6">
+        {event.dateString || event.date}
+      </p>
+
+      {/* Title */}
+      <h1 className="text-2xl font-semibold text-gray-800 mt-2">
+        {event.title}
+      </h1>
+
+      {/* Organizer */}
+      <p className="text-sm text-gray-600 mt-1">
+        By <span className="font-medium">{event.organizer}</span>
+      </p>
+
+      {/* Date and Time */}
+      <div className="mt-6">
+        <h3 className="text-gray-800 font-semibold">Date and time</h3>
+        <p className="text-gray-600 text-sm mt-1">{event.fullDate}</p>
+      </div>
+
+      {/* Location */}
+      <div className="mt-4">
+        <h3 className="text-gray-800 font-semibold">Location</h3>
+        <p className="text-gray-600 text-sm mt-1">{event.location}</p>
+      </div>
+
+      {/* Two-column layout */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+        {/* Left column - About */}
+        <div className="md:col-span-2">
+          <h3 className="text-gray-800 font-semibold mb-3">About this event</h3>
+          <p className="text-sm text-gray-600 leading-relaxed">
+            {event.description}
+          </p>
+        </div>
+
+        {/* Right column - Register */}
+        <div className="border border-gray-200 rounded-lg p-6 shadow-sm">
+          <h3 className="text-gray-800 font-semibold mb-4">Register Now</h3>
+          <form className="space-y-3">
+            <input
+              type="text"
+              placeholder="Enter your name"
+              className="w-full border border-gray-300 rounded-md p-2 text-sm"
+            />
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="w-full border border-gray-300 rounded-md p-2 text-sm"
+            />
+            <input
+              type="tel"
+              placeholder="Enter your phone number"
+              className="w-full border border-gray-300 rounded-md p-2 text-sm"
+            />
+            <button
+              type="button"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-md py-2 text-sm font-medium"
             >
-              <h3
-                className={`text-lg font-semibold ${
-                  active === index ? "text-blue-700" : "text-gray-800"
-                }`}
-              >
-                {item.title}
-              </h3>
-              {active === index && (
-                <p className="text-gray-600 mt-2 text-sm">{item.description}</p>
-              )}
-            </div>
-          ))}
-        </div>
-
-        {/* ===== Right Side (Image Display) ===== */}
-        <div className="w-full md:w-1/2 flex justify-center">
-          <img
-            src={features[active].image}
-            alt={features[active].title}
-            className="rounded-xl shadow-lg transition-all duration-500 w-full max-w-md object-cover"
-          />
+              Register
+            </button>
+          </form>
         </div>
       </div>
-    </section>
+    </div>
   );
-}
+};
+
+export default EventDetails;
 
 
 
