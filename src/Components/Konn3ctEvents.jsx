@@ -6,14 +6,14 @@ import Footer from "./kfooter";
 import EventCarousel from "./EventCarousel";
 import SearchHeader from "./SearchHeader";
 
-const tabs = ["ALL", "TODAY", "WEEK", "MONTH"];
+const tabs = ["ALL", "TODAY", "WEEK", "MONTH", "PAST"];
 
 const EventsPage = () => {
   const [activeTab, setActiveTab] = useState("ALL");
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("All Locations");
 
-  // ✅ Helper to parse event date
+  //  Helper to parse event date
   const parseEventDate = (dateStr) => {
     const cleanDate = dateStr.split("|")[0].trim();
     return new Date(cleanDate);
@@ -28,7 +28,7 @@ const EventsPage = () => {
   const oneMonthFromNow = new Date(today);
   oneMonthFromNow.setDate(today.getDate() + 30);
 
-  // ✅ Combined Filtering Logic
+  //  Combined Filtering Logic
   const filteredEvents = events.filter((event) => {
     const eventDate = parseEventDate(event.date);
 
@@ -44,7 +44,10 @@ const EventsPage = () => {
       matchesTab = eventDate >= today && eventDate <= oneWeekFromNow;
     } else if (activeTab === "MONTH") {
       matchesTab = eventDate >= today && eventDate <= oneMonthFromNow;
+    } else if (activeTab === "PAST"){
+      matchesTab = eventDate < today;
     }
+
 
     // --- SEARCH + LOCATION FILTER ---
     const matchesSearch =
@@ -55,7 +58,7 @@ const EventsPage = () => {
       selectedLocation === "All Locations" ||
       event.location.toLowerCase().includes(selectedLocation.toLowerCase());
 
-    // ✅ Final combined condition
+    //  Final combined condition
     return matchesTab && matchesSearch && matchesLocation;
   });
 
@@ -64,7 +67,7 @@ const EventsPage = () => {
       <Konn3ctHeader />
 
       <div className="min-h-screen px-6 lg:px-16 py-10 font-sans bg-white">
-        {/* ✅ SearchHeader Above Carousel */}
+        {/*  SearchHeader Above Carousel */}
         <div className="flex justify-center mb-8">
           <div className="w-full max-w-4xl">
             <SearchHeader
@@ -74,7 +77,7 @@ const EventsPage = () => {
           </div>
         </div>
 
-        {/* ✅ Event Carousel */}
+        {/*  Event Carousel */}
         <EventCarousel />
 
         {/* Filter Tabs */}
@@ -99,7 +102,7 @@ const EventsPage = () => {
           Events in {selectedLocation}
         </h2>
 
-        {/* ✅ Event Cards */}
+        {/*  Event Cards */}
         {filteredEvents.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {filteredEvents.map((event) => (

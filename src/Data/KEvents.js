@@ -30,6 +30,10 @@ export const events = [
     location: "Abuja, Nigeria",
     image: event2,
     tag: "Virtual Seminar",
+     dateString: "Wednesday, October 17",
+    fullDate: "March 11, 2025 | 09:00 - 16:00 (Africa/Lagos)",
+    organizer: "Lagos State Safety Commission",
+    description: ""
   },
   {
     id: 3,
@@ -38,6 +42,10 @@ export const events = [
     location: "Landmark Centre | Virtual Event",
     image: event3,
     tag: "Hybrid",
+     dateString: "Tuesday, October 7",
+    fullDate: "March 11, 2025 | 09:00 - 16:00 (Africa/Lagos)",
+    organizer: "Lagos State Safety Commission",
+    description: ""
   },
   {
     id: 4,
@@ -46,6 +54,10 @@ export const events = [
     location: "Lagos, Nigeria",
     image: event4,
     tag: "Hybrid",
+     dateString: "Tuesday, October 7",
+    fullDate: "March 11, 2025 | 09:00 - 16:00 (Africa/Lagos)",
+    organizer: "Lagos State Safety Commission",
+    description:""
   },
   {
     id: 5,
