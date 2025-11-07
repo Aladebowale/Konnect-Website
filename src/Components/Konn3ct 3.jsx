@@ -14,6 +14,7 @@ const App3 = () => {
         <div className="mt-8 mx-auto w-full max-w-4xl h-[300px] md:h-[400px] bg-gray-100 rounded-xl border-2 border-purple-300 flex items-center justify-center">
           <div className="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center">
             {/* <span className="text-white text-xl">▶</span> */}
+           
           </div>
         </div>
       </div>
