@@ -315,7 +315,7 @@ const LandingPage = () => {
           <h1 className="text-4xl sm:text-4xl md:text-5xl font-bold leading-tight">
             {/* <section className="relative text-center mt-20 px-6 w-full"> */}
             {/* <h1 className="text-4xl md:text-5xl font-bold leading-tight"> */}
-            Smarter Meetings...... <br /> Powered by AI.
+            Smarter Meetings. <br /> Powered by AI.
           </h1>
           <p className="mt-4 text-sm sm:text-base max-w-2xl mx-auto">
             {/* <p className="mt-4 text-base  max-w-2xl mx-auto"> */}
@@ -347,7 +347,7 @@ const LandingPage = () => {
         </section>
 
         {/* Feature Grid */}
-        <section className="relative top-[-100px] md:top-[-120px] flex justify-center items-end gap-7">
+        <section className="relative top-[-100px] flex justify-center items-end gap-7">
           <aside className="flex gap-4 md:gap-5 flex-wrap items-center md:justify-end">
             {/* <aside className="flex items-center gap-5 "> */}
             <div className="flex flex-col gap-4">
@@ -425,7 +425,7 @@ const LandingPage = () => {
           <div className="grid grid-cols-2 gap-4 w-[100%] sm:w-[60%] md:w-1/3">
             {/* <div className="flex flex-col gap-4"> */}
 
-            <div className="bg-white h-[150px] sm:h-[180px] rounded-md shadow flex items-center justify-center text-sm sm:text-lg font-semibold text-[#1A4699] transition-transform hover:scale-105 hover:shadow-lg duration-300">
+            <div className="bg-white h-[150px] sm:h-[180px] rounded-md shadow flex flex-col items-center justify-center text-sm sm:text-lg font-semibold text-[#1A4699] transition-transform hover:scale-105 hover:shadow-lg duration-300">
               <img
                 src={Caption}
                 alt="sheet"
@@ -434,31 +434,31 @@ const LandingPage = () => {
               <p className="font-medium text-xs md:text-base"> Live Caption</p>
             </div>
 
-            <div className="bg-white h-[150px] sm:h-[180px] rounded-md shadow flex items-center justify-center text-sm sm:text-lg font-semibold text-[#1A4699] transition-transform hover:scale-105 hover:shadow-lg duration-300">
+            <div className="bg-white h-[150px] sm:h-[180px] rounded-md shadow flex flex-col items-center justify-center text-sm sm:text-lg font-semibold text-[#1A4699] transition-transform hover:scale-105 hover:shadow-lg duration-300">
               <img
                 src={Translate}
                 alt="sheet"
                 className="w-10 h-10 mb-2 object-contain"
               />
-              <p className="font-medium text-xs md:text-base">Whiteboard</p>
+              <p className="font-medium text-xs md:text-base">Translate</p>
             </div>
 
-            <div className="bg-white h-[150px] sm:h-[180px] rounded-md shadow flex items-center justify-center text-sm sm:text-lg font-semibold text-[#1A4699] transition-transform hover:scale-105 hover:shadow-lg duration-300">
+            <div className="bg-white h-[150px] sm:h-[180px] rounded-md shadow flex flex-col items-center justify-center text-sm sm:text-lg font-semibold text-[#1A4699] transition-transform hover:scale-105 hover:shadow-lg duration-300">
               <img
                 src={Donate}
                 alt="sheet"
                 className="w-10 h-10 mb-2 object-contain"
               />
-              <p className="font-medium text-xs md:text-base"> Live Caption</p>
+              <p className="font-medium text-xs md:text-base">Donate</p>
             </div>
 
-            <div className="bg-white h-[150px] sm:h-[180px] rounded-md shadow flex items-center justify-center text-sm sm:text-lg font-semibold text-[#1A4699] transition-transform hover:scale-105 hover:shadow-lg duration-300">
+            <div className="bg-white h-[150px] sm:h-[180px] rounded-md shadow flex flex-col items-center justify-center text-sm sm:text-lg font-semibold text-[#1A4699] transition-transform hover:scale-105 hover:shadow-lg duration-300">
               <img
                 src={AI}
                 alt="sheet"
                 className="w-10 h-10 mb-2 object-contain"
               />
-              <p className="font-medium text-xs md:text-base"> Live Caption</p>
+              <p className="font-medium text-xs md:text-base">AI</p>
             </div>
 
             {/* </div> */}
