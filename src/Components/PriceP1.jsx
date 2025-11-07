@@ -240,8 +240,9 @@ const Kpricing = () => {
                 <img src={LeafR} alt="Leaf Right" className="h-full object-contain" />
               </span>
             </div>
+        <div className="relative z-20 mt-10 md:mt-20 space-y-12 md:space-y-16">
 
-              <div className="relative z-20 mt-20 space-y-16">
+              {/* <div className="relative z-20 mt-20 space-y-16"> */}
                      
                       <FeatP2 />
                       <Footer />

@@ -1,4 +1,140 @@
 import React from "react";
+import Konn3ctHeader from "../Components/Konn3ctHeader";
+import App1 from "../Components/Konn3ct 1";
+import App2 from "../Components/Konn3ct 2";
+import App3 from "../Components/Konn3ct 3";
+import Footer from "../Components/kfooter";
+import Calendar from "../Images/Konn3ct Images/calendar-04.png";
+import NoteTaker from "../Images/Konn3ct Images/note-02.png";
+import Scheduling from "../Images/Konn3ct Images/check-list.png";
+import Reactions from "../Images/Konn3ct Images/smile.png";
+import Bandwidth from "../Images/Konn3ct Images/internet-antenna-01.png";
+import Audio from "../Images/Konn3ct Images/audio-wave-01.png";
+import PlayBack from "../Images/Konn3ct Images/previous.png";
+import Doc from "../Images/Konn3ct Images/google-doc.png";
+import eCinema from "../Images/Konn3ct Images/tv-smart.png";
+import Polls from "../Images/Konn3ct Images/quiz-03.png";
+import Highlights from "../Images/Konn3ct Images/ai-idea.png";
+import Support from "../Images/Konn3ct Images/customer-support (1).png";
+import Dashboard from "../Images/Konn3ct Images/dashboard-speed-02.png";
+import Caption from "../Images/Konn3ct Images/closed-caption.png";
+import Translate from "../Images/Konn3ct Images/translation.png";
+import Donate from "../Images/Konn3ct Images/gift.png";
+import AI from "../Images/Konn3ct Images/sparkles.png";
+
+const LandingPage = () => {
+  return (
+    <div className="w-full min-h-screen bg-gradient-to-b from-[#03173f] to-[#2657B0] text-white font-sans relative">
+      {/* Subtle grid background */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: `
+            repeating-linear-gradient(to right, rgba(255,255,255,0.08) 0, rgba(255,255,255,0.08) 1px, transparent 1px, transparent 80px),
+            repeating-linear-gradient(to bottom, rgba(255,255,255,0.08) 0, rgba(255,255,255,0.08) 1px, transparent 1px, transparent 120px)
+          `,
+        }}
+      />
+
+      <Konn3ctHeader />
+
+      {/* Hero Section */}
+      <section className="relative text-center mt-20 px-4 sm:px-6 w-full z-10">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+          Smarter Meetings. <br /> Powered by AI.
+        </h1>
+        <p className="mt-4 text-sm sm:text-base max-w-2xl mx-auto">
+          One intelligent platform for meetings, teamwork, and seamless
+          communication.
+        </p>
+
+        {/* Input + Button (unified design) */}
+        <div className="mt-6 flex justify-center">
+          <div className="flex w-64 sm:w-80 bg-white rounded-xl overflow-hidden shadow-lg focus-within:ring-2 focus-within:ring-green-600 transition-all duration-300">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              className="flex-1 px-4 py-3 text-black outline-none text-xs sm:text-sm"
+            />
+            <button className="bg-[#34A853] hover:bg-green-800 transition-colors duration-300 text-white font-medium px-4 py-3 text-xs sm:text-sm">
+              Get started
+            </button>
+          </div>
+        </div>
+
+        <p className="text-xs sm:text-sm mt-2">
+          Free Forever. No Credit Card.
+        </p>
+      </section>
+
+      {/* Feature Grid Section */}
+      <section className="relative top-[-80px] md:top-[-100px] flex flex-col items-center justify-center px-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 w-full max-w-5xl justify-items-center">
+          {[
+            { img: NoteTaker, label: "Note Taker" },
+            { img: Scheduling, label: "Scheduling" },
+            { img: Reactions, label: "Reactions" },
+            { img: Bandwidth, label: "Low Bandwidth" },
+            { img: Audio, label: "Audio Boost" },
+            { img: PlayBack, label: "Playback" },
+            { img: Caption, label: "Live Caption" },
+            { img: Translate, label: "Translation" },
+            { img: Donate, label: "Donate" },
+            { img: AI, label: "AI Assistant" },
+            { img: Doc, label: "Doc Sharing" },
+            { img: eCinema, label: "eCinema" },
+            { img: Calendar, label: "Calendar" },
+            { img: Polls, label: "Polls" },
+            { img: Highlights, label: "Highlights" },
+            { img: Support, label: "24/7 Support" },
+            { img: Dashboard, label: "Dashboard" },
+          ].map((feature, index) => (
+            <div
+              key={index}
+              className="bg-white w-28 h-28 sm:w-32 sm:h-32 flex flex-col items-center justify-center rounded-lg shadow text-[#1A4699] 
+              transition-transform hover:scale-105 hover:shadow-lg duration-300"
+            >
+              <img
+                src={feature.img}
+                alt={feature.label}
+                className="w-10 h-10 mb-2 object-contain"
+              />
+              <p className="font-medium text-xs sm:text-sm text-center px-1">
+                {feature.label}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* App Sections */}
+      <div className="relative z-20 mt-10 md:mt-20 space-y-12 md:space-y-16">
+        <App1 />
+        <App2 />
+        <App3 />
+        <Footer />
+      </div>
+    </div>
+  );
+};
+
+export default LandingPage;
+
+
+@layer components {
+  .feature-box {
+    @apply bg-white w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center rounded-lg shadow text-[#1A4699] transition-transform hover:scale-105 hover:shadow-lg duration-300;
+  }
+  .feature-large {
+    @apply bg-white h-[120px] sm:h-[150px] rounded-md shadow flex items-center justify-center text-sm sm:text-lg font-semibold text-[#1A4699] transition-transform hover:scale-105 hover:shadow-lg duration-300;
+  }
+}
+
+
+
+
+
+import React from "react";
 import { useParams } from "react-router-dom";
 import { events } from "../Data/KEvents";
 

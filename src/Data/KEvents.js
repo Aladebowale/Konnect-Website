@@ -6,9 +6,9 @@ import event5 from "../Images/Konn3ct Images/Rectangle 6321.png";
 import event6 from "../Images/Konn3ct Images/Rectangle 6322.png";
 import event7 from "../Images/Konn3ct Images/Rectangle 6323.png";
 import event8 from "../Images/Konn3ct Images/Rectangle 6324.png";
+import formatEventDates from "../Data/KEventDate"
 
-
-export const events = [
+export const rawEvents = [
   {
     id: 1,
     title: "Occupational Safety and Health (OSH)",
@@ -93,3 +93,7 @@ export const events = [
   },
 ];
 
+export const events = rawEvents.map((event) => ({
+  ...event,
+  ...formatEventDates(event.date),
+}));

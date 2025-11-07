@@ -1,5 +1,7 @@
 import React from "react";
 import Nafdac from "../Images/Konn3ct Images/Nafdac.png";
+import Chams from "../Images/Konn3ct Images/ChamsPlc.png";
+
 import LeafL from "../Images/Konn3ct Images/leaf left.png";
 import LeafR from "../Images/Konn3ct Images/right leaf.png";
 
@@ -23,8 +25,34 @@ const Cust1 = () => {
           </div>
 
           {/* Text */}
-          <p className="text-gray-800 font-medium mt-auto leading-snug">
+          <p className="text-gray-800 font-medium mt-auto leading-snug mb-4">
             Why NAFDAC partnered with konn3ct over Zoom and Google Meet
+          </p>
+
+          {/* Link */}
+          <a
+            href="#"
+            className="text-black font-semibold text-sm hover:underline "
+          >
+            Learn More →
+          </a>
+        </div>
+
+        {/* CARD 2 */}
+        <div className="border border-gray-200 p-8 rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600 min-h-[320px] flex flex-col">
+          {/* Logo */}
+          <div className="h-12 mb-8 flex items-start">
+            <img
+              src={Chams}
+              alt="NAFDAC Logo"
+              className="h-full object-contain"
+            />
+          </div>
+
+          {/* Text */}
+          <p className="text-gray-800 font-medium mt-auto leading-snug mb-4">
+            How Chams Plc Transformed Team Management with konn3ct AI-Powered
+            capabilities{" "}
           </p>
 
           {/* Link */}
@@ -36,38 +64,60 @@ const Cust1 = () => {
           </a>
         </div>
 
-        {/* CARD 2 */}
-        <div className="border border-gray-200 p-6 rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600">
-          <div className="h-12 mb-4 flex items-center"></div>
-          <p className="text-gray-800 font-medium mb-3 leading-snug">
-            How Chams Plc Transformed Team Management with konn3ct AI-Powered
-            capabilities
-          </p>
-          <a
-            href="#"
-            className="text-blue-600 font-semibold text-sm hover:underline"
-          >
-            Learn More →
-          </a>
-        </div>
-
         {/* CARD 3 */}
-        <div className="border border-gray-200 p-6 rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600">
-          <div className="h-12 mb-4 flex items-center"></div>
-          <p className="text-gray-800 font-medium mb-3 leading-snug">
+        <div className="border border-gray-200 p-8 rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600 min-h-[320px] flex flex-col">
+          {/* Logo */}
+          <div className="h-12 mb-8 flex items-start">
+            <img
+              src={Nafdac}
+              alt="NAFDAC Logo"
+              className="h-full object-contain"
+            />
+          </div>
+
+          {/* Text */}
+          <p className="text-gray-800 font-medium mt-auto leading-snug mb-4">
             How IntraHub Transformed Team Management with konn3ct AI-Powered
-            capabilities
+            capabilities{" "}
           </p>
+
+          {/* Link */}
           <a
             href="#"
-            className="text-blue-600 font-semibold text-sm hover:underline"
+            className="text-blue-600 font-semibold text-sm hover:underline "
           >
             Learn More →
           </a>
         </div>
 
         {/* CARD 4 */}
-        <div className="border border-gray-200 p-6 rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600 min-h-[320px] h-full">
+        <div className="border border-gray-200 p-8 rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600 min-h-[320px] flex flex-col">
+          {/* Logo */}
+          <div className="h-12 mb-8 flex items-start">
+            <img
+              src={Nafdac}
+              alt="NAFDAC Logo"
+              className="h-full object-contain"
+            />
+          </div>
+
+          {/* Text */}
+          <p className="text-gray-800 font-medium mt-auto leading-snug mb-4">
+            How Meyer Plc Transformed Team Management with konn3ct AI-Powered
+            capabilities{" "}
+          </p>
+
+          {/* Link */}
+          <a
+            href="#"
+            className="text-blue-600 font-semibold text-sm hover:underline "
+          >
+            Learn More →
+          </a>
+        </div>
+
+        {/* CARD 5 */}
+        <div className="border border-gray-200 p-8 rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600 min-h-[320px] flex flex-col">
           <div className="h-12 mb-4 flex items-center">
             <img
               src={Nafdac}
@@ -75,9 +125,9 @@ const Cust1 = () => {
               className="h-full object-contain"
             />
           </div>
-          <p className="text-gray-800 font-medium mb-3 leading-snug">
-            How Meyer Plc Transformed Team Management with konn3ct AI-Powered
-            capabilities{" "}
+          <p className="text-gray-800 font-medium mt-auto leading-snug mb-4">
+            How NCS Transformed Team Management with konn3ct AI-Powered
+            capabilities
           </p>
           <a
             href="#"
@@ -87,22 +137,25 @@ const Cust1 = () => {
           </a>
         </div>
 
-        {/* CARD 5 */}
-        <div className="border border-gray-200 p-6 rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600">
-          <div className="h-12 mb-4 flex items-center"></div>
-          <p className="text-gray-800 font-medium leading-snug">
-            How NCS Transformed Team Management with konn3ct AI-Powered
-            capabilities
-          </p>
-        </div>
-
         {/* CARD 6 */}
-        <div className="border border-gray-200 p-6 rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600">
-          <div className="h-12 mb-4 flex items-center"></div>
-          <p className="text-gray-800 font-medium leading-snug">
+        <div className="border border-gray-200 p-8 rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600 min-h-[320px] flex flex-col">
+          <div className="h-12 mb-4 flex items-center">
+            <img
+              src={Nafdac}
+              alt="NAFDAC Logo"
+              className="h-full object-contain"
+            />
+          </div>
+          <p className="text-gray-800 font-medium mt-auto leading-snug mb-4">
             How Abeokuta Club Transformed Team Management with konn3ct
             AI-Powered capabilities
           </p>
+          <a
+            href="#"
+            className="text-blue-600 font-semibold text-sm hover:underline"
+          >
+            Learn More →
+          </a>
         </div>
       </div>
 
