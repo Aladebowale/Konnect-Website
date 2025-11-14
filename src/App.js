@@ -20,7 +20,7 @@ import EventDetails from "./Components/KonnectEventId";
 
 // import combineApp from "./Components/combine";
 
-
+// import Landing from './Components/holdest';
 
 const App = () => {
   return (
@@ -38,16 +38,14 @@ const App = () => {
       <Route path='/Konn3ctPP' element={<Konn3ctPP />} />
       <Route path='/Konn3ctDevs' element={<Konn3ctDevs />} />
       <Route path='/EventsPage' element={<EventsPage />} />
-      <Route path="/event/:id" element={<EventDetails />} />
-
-
-
+      <Route path="/event/:ref" element={<EventDetails />} />
          </Routes>
       {/* <Route path='/Konn3ctDevs' element={<Konn3ctDevs />} /> */}
 
        </Router> 
 
     
+      {/* <Landing/> */}
 
       {/* <LandingPage/> */}
       {/* <FeaturesPage/> */}

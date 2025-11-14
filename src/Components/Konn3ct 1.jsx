@@ -115,6 +115,123 @@
 
 // export default App1;
 
+// import React, { useState } from "react";
+// import image1 from "../Images/Konn3ct Images/Rectangle 3 (1).png";
+// import Nafdac from "../Images/Konn3ct Images/Nafdac.png";
+// import Chams from "../Images/Konn3ct Images/Chams.png";
+// import NCS from "../Images/Konn3ct Images/Ncs.png";
+// import Meyer from "../Images/Konn3ct Images/Meyer.png";
+// import IntraHub from "../Images/Konn3ct Images/Intrahub.png";
+// import ABK from "../Images/Konn3ct Images/ABK Club.png";
+// import Bgshape from "../Images/Konn3ct Images/Background shape.png";
+
+// const App1 = () => {
+//   const [active, setActive] = useState(0);
+//   const features = [
+//     {
+//       title: "Workflows That Work for You",
+//       description:
+//         "Automate follow-ups, track progress, and keep your team aligned.",
+//       image: Bgshape,
+//     },
+//     {
+//       title: "Decisions Made Smarter",
+//       description:
+//         "Gain insights powered by AI to make faster, data-driven decisions.",
+//       image: Bgshape,
+//     },
+//     {
+//       title: "Collaborate Without Limits",
+//       description:
+//         "Bring your team together in one seamless platform for teamwork.",
+//       image: Bgshape,
+//     },
+//     {
+//       title: "Meet with Intelligence",
+//       description:
+//         "AI-driven summaries and real-time transcription for efficient meetings.",
+//       image: image1,
+//     },
+//   ];
+//   return (
+//     <div className="relative z-10 bg-white text-gray-800 py-20 px-6 w-full overflow-hidden">
+//       <div className="max-w-6xl mx-auto text-center mb-28">
+//         <p className="text-lg font-medium mb-10 text-gray-700">
+//           Trusted by 15,000+ Individuals and companies.
+//         </p>       
+//         <div className="flex flex-wrap justify-center items-center gap-10 opacity-80">
+//           {[Nafdac, Chams, NCS, Meyer, IntraHub, ABK].map((logo, i) => (
+//             <img
+//               key={i}
+//               src={logo}
+//               alt={`Company-${i}`}
+//               className="h-20 w-auto hover:scale-105 transition-transform duration-300"
+//             />
+//           ))}
+//         </div>
+//       </div>
+//       <div className="max-w-7xl mx-auto px-6 py-20">
+//         {/* ===== Heading Section ===== */}
+//         <div className="text-center mb-12">
+//           <p className="text-blue-600 font-medium mb-2 font-Shantell">
+//             The all-in-one workspace{" "}
+//           </p>
+//           <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+//             Do your most important work, faster
+//           </h2>
+//         </div>
+//         {/* <div className="relative py-20 bg-white overflow-hidden"> */}
+//         {/* ===== Content Grid ===== */}
+//         <div className="flex flex-col md:flex-row items-center justify-between gap-10 ">
+//           {/* Left Side Feature List */}
+//           <div className="w-full md:w-1/2 flex flex-col gap-5">
+//             {features.map((item, index) => (
+//               <div
+//                 key={index}
+//                 onClick={() => setActive(index)}
+//                 className={`cursor-pointer transition-all border-l-4 pl-4 duration-300 ${
+//                   active === index
+//                     ? "border-blue-600 text-blue-700 scale-105 bg-blue-50"
+//                     : "border-transparent text-gray-500 hover:text-gray-700 hover:scale-105"
+//                 }`}
+//               >
+//                 <h3
+//                   className={`text-lg font-semibold transition-colors duration-300 ${
+//                     active === index ? "text-blue-700" : "text-gray-800"
+//                   }`}
+//                 >
+//                   {item.title}
+//                 </h3>
+//                 {active === index && (
+//                   <p className="text-gray-600 mt-2 text-sm leading-relaxed">
+//                     {item.description}
+//                   </p>
+//                 )}
+//               </div>
+//             ))}
+//           </div>
+//           {/* Right Side Image */}
+//           {/* <div className="w-full md:w-1/2 flex justify-center" */}
+//           <div
+//             className="w-[500px] h-[280px] md:h-[360px] border border-gray-300 rounded-xl flex items-center justify-center"
+//             // style={{ backgroundImage: `url(${Bgshape})` }}
+//           >
+//             <img
+//               src={features[active].image}
+//               alt={features[active].title}
+//               className="rounded-xl shadow-lg transition-all duration-700 w-full h-full object-cover hover:scale-105"
+//               // className="rounded-xl shadow-lg transition-all duration-500 w-full max-w-md object-cover"
+//             />
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+// export default App1;
+
+
+
 import React, { useState } from "react";
 import image1 from "../Images/Konn3ct Images/Rectangle 3 (1).png";
 import Nafdac from "../Images/Konn3ct Images/Nafdac.png";
@@ -155,41 +272,43 @@ const App1 = () => {
     },
   ];
 
+  const logos = [Nafdac, Chams, NCS, Meyer, IntraHub, ABK];
+
   return (
     <div className="relative z-10 bg-white text-gray-800 py-20 px-6 w-full overflow-hidden">
+      {/* ====== Trusted Logos Section ====== */}
       <div className="max-w-6xl mx-auto text-center mb-28">
-        <p className="text-lg font-medium mb-10 text-gray-700">
+        <p className="text-lg sm:text-3xl md:text-3xl font-bold mb-10 text-gray-700">
           Trusted by 15,000+ Individuals and companies.
         </p>
-        
-        <div className="flex flex-wrap justify-center items-center gap-10 opacity-80">
-          {[Nafdac, Chams, NCS, Meyer, IntraHub, ABK].map((logo, i) => (
+
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:flex md:flex-wrap justify-center items-center gap-6 sm:gap-10 opacity-80">
+          {logos.map((logo, i) => (
             <img
               key={i}
               src={logo}
               alt={`Company-${i}`}
-              className="h-20 w-auto hover:scale-105 transition-transform duration-300"
+              className="h-14 sm:h-16 md:h-20 w-auto hover:scale-105 transition-transform duration-300 mx-auto"
             />
           ))}
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 py-20">
-        {/* ===== Heading Section ===== */}
+      {/* ====== Main Feature Section ====== */}
+      <div className="max-w-7xl mx-auto px-4 md:px-6 py-10 md:py-20">
+        {/* Heading */}
         <div className="text-center mb-12">
-          <p className="text-blue-600 font-medium mb-2 font-Shantell">
-            The all-in-one workspace{" "}
+          <p className="text-[#1A4699] font-medium mb-2 font-shantell">
+            The all-in-one workspace
           </p>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
             Do your most important work, faster
           </h2>
         </div>
 
-        {/* <div className="relative py-20 bg-white overflow-hidden"> */}
-
-        {/* ===== Content Grid ===== */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-10 ">
-          {/* Left Side Feature List */}
+        {/* Content Grid */}
+        <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16">
+          {/* Left: Feature List */}
           <div className="w-full md:w-1/2 flex flex-col gap-5">
             {features.map((item, index) => (
               <div
@@ -197,13 +316,13 @@ const App1 = () => {
                 onClick={() => setActive(index)}
                 className={`cursor-pointer transition-all border-l-4 pl-4 duration-300 ${
                   active === index
-                    ? "border-blue-600 text-blue-700 scale-105 bg-blue-50"
-                    : "border-transparent text-gray-500 hover:text-gray-700 hover:scale-105"
+                    ? "border-blue-600 text-[#1A4699] scale-[1.02] bg-blue-50"
+                    : "border-transparent text-gray-500 hover:text-gray-700 hover:scale-[1.01]"
                 }`}
               >
                 <h3
                   className={`text-lg font-semibold transition-colors duration-300 ${
-                    active === index ? "text-blue-700" : "text-gray-800"
+                    active === index ? "text-[#1A4699]" : "text-gray-800"
                   }`}
                 >
                   {item.title}
@@ -217,23 +336,20 @@ const App1 = () => {
             ))}
           </div>
 
-          {/* Right Side Image */}
-
-          {/* <div className="w-full md:w-1/2 flex justify-center" */}
-          <div
-            className="w-[500px] h-[280px] md:h-[360px] border border-gray-300 rounded-xl flex items-center justify-center"
-            // style={{ backgroundImage: `url(${Bgshape})` }}
-          >
-            <img
-              src={features[active].image}
-              alt={features[active].title}
-              className="rounded-xl shadow-lg transition-all duration-700 w-full h-full object-cover hover:scale-105"
-              // className="rounded-xl shadow-lg transition-all duration-500 w-full max-w-md object-cover"
-            />
+          {/* Right: Responsive Image */}
+          <div className="w-full md:w-1/2 flex justify-center">
+            <div className="w-full sm:w-[400px] md:w-[500px] h-auto rounded-xl overflow-hidden border border-gray-300 flex items-center justify-center">
+              <img
+                src={features[active].image}
+                alt={features[active].title}
+                className="w-full h-auto object-cover rounded-xl shadow-lg transition-transform duration-700 hover:scale-105"
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
   );
 };
+
 export default App1;

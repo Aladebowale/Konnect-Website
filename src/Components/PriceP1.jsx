@@ -53,13 +53,13 @@ const Kpricing = () => {
       </section>   */}
 
       {/* Billing Toggle */}
-      <div className="flex justify-center mb-10 mt-10">
-        <div className="bg-gray-100 p-1 rounded-full flex items-center space-x-2">
+      <div className="flex justify-center mb-10 mt-10 ">
+        <div className="bg-white p-1 rounded-xl flex items-center space-x-2 border border-[#1A4699]">
           <button
             onClick={() => setBilling("yearly")}
-            className={`px-5 py-2 rounded-full text-sm font-medium transition ${
+            className={`px-5 py-2 rounded-xl text-sm font-medium transition ${
               billing === "yearly"
-                ? "bg-blue-600 text-white"
+                ? "bg-[#1A4699] text-white"
                 : "text-gray-600 hover:bg-gray-200"
             }`}
           >
@@ -67,9 +67,9 @@ const Kpricing = () => {
           </button>
           <button
             onClick={() => setBilling("monthly")}
-            className={`px-5 py-2 rounded-full text-sm font-medium transition ${
+            className={`px-5 py-2 rounded-xl text-sm font-medium transition ${
               billing === "monthly"
-                ? "bg-blue-600 text-white"
+                ? "bg-[#1A4699] text-white"
                 : "text-gray-600 hover:bg-gray-200"
             }`}
           >
@@ -79,7 +79,7 @@ const Kpricing = () => {
       </div>
 
       {/* Pricing Container */}
-      <div className="max-w-7xl mx-auto border rounded-2xl shadow-sm overflow-hidden bg-white">
+      <div className="max-w-7xl mx-auto border-none rounded-2xl shadow-sm overflow-hidden bg-white">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 divide-x divide-gray-200">
           {/* Free Plan */}
           <div

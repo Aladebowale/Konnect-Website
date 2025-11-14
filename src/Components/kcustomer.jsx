@@ -1,7 +1,6 @@
 import React from "react";
 import Nafdac from "../Images/Konn3ct Images/Nafdac.png";
 import Chams from "../Images/Konn3ct Images/ChamsPlc.png";
-
 import LeafL from "../Images/Konn3ct Images/leaf left.png";
 import LeafR from "../Images/Konn3ct Images/right leaf.png";
 
@@ -14,7 +13,7 @@ const Cust1 = () => {
       {/* GRID OF 6 CARDS */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 relative z-10">
         {/* CARD 1 */}
-        <div className="border border-gray-200 p-8 rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600 min-h-[320px] flex flex-col">
+        <div className="border border-gray-200 p-8 rounded-xl md:rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600 min-h-[320px] flex flex-col">
           {/* Logo */}
           <div className="h-12 mb-8 flex items-start">
             <img
@@ -39,7 +38,7 @@ const Cust1 = () => {
         </div>
 
         {/* CARD 2 */}
-        <div className="border border-gray-200 p-8 rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600 min-h-[320px] flex flex-col">
+        <div className="border border-gray-200 p-8 rounded-xl md:rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600 min-h-[320px] flex flex-col">
           {/* Logo */}
           <div className="h-12 mb-8 flex items-start">
             <img
@@ -65,7 +64,7 @@ const Cust1 = () => {
         </div>
 
         {/* CARD 3 */}
-        <div className="border border-gray-200 p-8 rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600 min-h-[320px] flex flex-col">
+        <div className="border border-gray-200 p-8 rounded-xl md:rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600 min-h-[320px] flex flex-col">
           {/* Logo */}
           <div className="h-12 mb-8 flex items-start">
             <img
@@ -91,7 +90,7 @@ const Cust1 = () => {
         </div>
 
         {/* CARD 4 */}
-        <div className="border border-gray-200 p-8 rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600 min-h-[320px] flex flex-col">
+        <div className="border border-gray-200 p-8 rounded-xl md:rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600 min-h-[320px] flex flex-col">
           {/* Logo */}
           <div className="h-12 mb-8 flex items-start">
             <img
@@ -117,7 +116,7 @@ const Cust1 = () => {
         </div>
 
         {/* CARD 5 */}
-        <div className="border border-gray-200 p-8 rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600 min-h-[320px] flex flex-col">
+        <div className="border border-gray-200 p-8 rounded-xl md:rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600 min-h-[320px] flex flex-col">
           <div className="h-12 mb-4 flex items-center">
             <img
               src={Nafdac}
@@ -138,7 +137,7 @@ const Cust1 = () => {
         </div>
 
         {/* CARD 6 */}
-        <div className="border border-gray-200 p-8 rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600 min-h-[320px] flex flex-col">
+        <div className="border border-gray-200 p-8 rounded-xl md:rounded-md shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-white hover:border-green-600 min-h-[320px] flex flex-col">
           <div className="h-12 mb-4 flex items-center">
             <img
               src={Nafdac}
@@ -161,7 +160,7 @@ const Cust1 = () => {
 
       {/* TRUST SECTION */}
       <div className="flex items-center justify-center gap-3 text-gray-800 text-lg font-semibold relative z-10">
-        <span className="inline-block h-10 w-6">
+        <span className="inline-block h-14 w-6">
           <img src={LeafL} alt="Leaf Left" className="h-full object-contain" />
         </span>
 
@@ -169,7 +168,7 @@ const Cust1 = () => {
           Trusted by 15,000+ Individuals and companies.
         </p>
 
-        <span className="inline-block h-10 w-6">
+        <span className="inline-block h-14 w-6">
           <img src={LeafR} alt="Leaf Right" className="h-full object-contain" />
         </span>
       </div>

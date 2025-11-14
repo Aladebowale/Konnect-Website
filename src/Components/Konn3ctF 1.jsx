@@ -19,8 +19,11 @@ const FeatP1 = () => {
   return (
     <section className="relative bg-white text-gray-800 py-16 px-6 md:px-12 rounded-lg max-w-7xl mx-auto">
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-          What You Can Do with Konn3ct
+        {/* <h2 className="text-3xl md:text-4xl font-bold text-gray-900"> */}
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">
+
+
+          What you can do with Konn3ct
         </h2>
         {/* <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
           Discover how Konn3ct transforms your team’s workflow — from intelligent automation to seamless communication and real-time productivity.

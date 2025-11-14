@@ -63,7 +63,7 @@ const FeaturesPage = () => {
       <Konn3ctHeader />
 
       {/* ====== Hero Section (with grid) ====== */}
-      <section className="relative text-center mt-24 px-6 md:px-12 overflow-hidden">
+      <section className="relative text-center mt-16 px-6 md:px-12 overflow-hidden">
         {/* Grid background for hero only */}
        
 
@@ -78,9 +78,12 @@ const FeaturesPage = () => {
           insights, it keeps projects moving without friction.
         </p>
 
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition mt-6">
+        {/* <button className="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition mt-6">
           Sign up, It's Free
-        </button>
+        </button> */}
+         <button className="px-4 py-2 text-sm text-white bg-[#1A4699] rounded-lg hover:bg-blue-500 transition shadow-sm mt-4">
+            Sign up, It’s Free
+          </button>
 
         {/* Auto-scroll Feature Row */}
         <div
@@ -119,7 +122,7 @@ const FeaturesPage = () => {
       </section>
 
       {/* ====== Features Details Sections (no grid) ====== */}
-      <div className="relative z-20 mt-20 space-y-16">
+      <div className="relative z-20 mt-10 space-y-10">
         <FeatP1 />
         <FeatP2 />
         <Footer />

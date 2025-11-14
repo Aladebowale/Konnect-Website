@@ -1,26 +1,70 @@
+// import React from "react";
+// import frame from "../Images/Konn3ct Images/Frame 1444.png";
+
+// const FeatP2 = () => {
+//   return (
+//     <div className="w-full px-4 sm:px-6 md:px-12 py-10">
+//       <div className="flex flex-col md:flex-row items-center justify-between gap-8 bg-gradient-to-b from-[#03173f] to-[#1a4696] rounded-3xl p-6 sm:p-8 md:p-10 text-white shadow-lg">
+        
+//         {/* Left Content */}
+//         <div className="md:w-1/2 text-center md:text-left space-y-4">
+//           <h3 className="text-2xl sm:text-3xl md:text-4xl font-sans leading-tight">
+//             One AI for all your collaboration
+//           </h3>
+//           <p className="text-sm sm:text-base text-blue-100 leading-relaxed">
+//             Unify meetings, teamwork, and workflows with company-wide intelligence
+//             in one smart platform. Experience productivity powered by AI.
+//           </p>
+//           <button className="bg-white text-blue-700 font-semibold px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg hover:bg-blue-100 transition w-full sm:w-auto">
+//             Sign up, it’s free
+//           </button>
+//         </div>
+
+//         {/* Right Image */}
+//         <div className="md:w-1/2 flex justify-center">
+//           <div className="w-full max-w-xs sm:max-w-sm md:max-w-md flex items-center justify-center">
+//             <img
+//               src={frame}
+//               alt="AI collaboration illustration"
+//               className="w-full h-auto rounded-xl"
+//             />
+//           </div>
+//         </div>
+
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default FeatP2;
+
+
+
 import React from "react";
 import frame from "../Images/Konn3ct Images/Frame 1444.png";
 
 const FeatP2 = () => {
   return (
-    <div className="max-w-full mx-auto px-6 md:px-12 rounded-3xl overflow-hidden text-white">
-      <div className="flex flex-col md:flex-row items-center justify-between gap-8 bg-gradient-to-b from-[#03173f] to-[#1a4696] rounded-3xl  px-6 md:px-10 shadow-lg">        
+    <div className="max-w-full px-3 md:px-6 rounded-3xl overflow-hidden text-white">
+     
+     
+      <div className="relative flex flex-col md:flex-row items-center bg-gradient-to-b from-[#03173f] to-[#1a4696] rounded-3xl  px-5 md:px-10 py-6 md:py-0 shadow-lg ">        
         {/* Left Content */}
-        <div className="md:w-1/2 text-center md:text-left">
-          <h3 className="text-3xl md:text-4xl font-bold mb-3 leading-tight">
+        <div className="md:w-1/2 w-full sm:text-center md:text-left p-5 gap-10">
+          <h3 className="text-3xl md:text-4xl font-bold mb-5 leading-tight">
             One AI for all your collaboration
           </h3>
-          <p className="text-blue-100 mb-5 leading-relaxed">
+          <p className="text-blue-100 mb-5 leading-relaxed text-xl font-normal">
             Unify meetings, teamwork, and workflows with company-wide intelligence
-            in one smart platform. Experience productivity powered by AI.
+            in one platform. 
           </p>
-          <button className="bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg hover:bg-blue-100 transition">
+          <button className="bg-white text-black font-semibold px-6 py-3 rounded-lg hover:bg-blue-100 transition">
             Sign up, it’s free
           </button>
         </div>
 
         {/* Right Image */}
-        <div className="md:w-1/2 flex justify-center">
+        <div className="md:w-1/2 w-full flex justify-end">
           <div className="w-full max-w-md h-auto flex items-center justify-center">
             <img
               src={frame}

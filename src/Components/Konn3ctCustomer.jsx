@@ -36,20 +36,20 @@ const CustomerPage = () => {
           The next generation <br /> runs on Konn3ct
         </h1>
 
-        <p className="mt-8 text-base max-w-2xl mx-auto text-black">
+        <p className=" mt-8 text-base max-w-2xl mx-auto text-black">
           Join thousands of companies achieving faster resolution times, <br />
           higher team efficiency, and better satisfaction.
         </p>
 
         {/* Input + Button */}
         <div className="mt-6 flex justify-center">
-          <div className="relative w-72">
+          <div className="relative w-full md:w-72">
             <input
               type="email"
               placeholder="Enter your email address"
-              className="px-4 py-3 pr-28 w-full rounded-xl border-none text-black outline-none text-xs shadow-md"
+              className="px-4 py-5 pr-28 md:py-3 w-full rounded-xl border-none text-black outline-none text-sm md:text-sm shadow-md"
             />
-            <button className="absolute top-1/2 right-2 -translate-y-1/2 bg-[#1A4699] font-medium text-white px-3 py-2 rounded-md text-xs hover:bg-green-800">
+            <button className="absolute top-1/2 right-2 -translate-y-1/2 bg-[#1A4699] font-medium text-white px-3 py-2 rounded-md text-xs hover:bg-blue-600">
               Get started
             </button>
           </div>

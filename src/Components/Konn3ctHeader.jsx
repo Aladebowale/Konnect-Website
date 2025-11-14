@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, ChevronDown } from "lucide-react"; // ✅ Added ChevronDown
+import { Menu, X, ChevronDown } from "lucide-react"; 
 import Logo from "../Images/Konn3ct Images/konn3ct_logo.png";
 
 const Konn3ctHeader = () => {
@@ -86,7 +86,7 @@ const Konn3ctHeader = () => {
           <button className="px-4 py-2 text-sm bg-transparent border border-[#1A4699] rounded-lg text-black hover:bg-white hover:text-blue-500 transition shadow-sm">
             Login
           </button>
-          <button className="px-4 py-2 text-sm text-white bg-blue-500 rounded-lg hover:bg-[#1A4699] transition shadow-sm">
+          <button className="px-4 py-2 text-sm text-white bg-[#1A4699] rounded-lg hover:bg-blue-500 transition shadow-sm">
             Sign up, It’s Free
           </button>
         </div>
@@ -156,11 +156,11 @@ const Konn3ctHeader = () => {
             Terms & Conditions
           </Link>
 
-          <div className="pt-3 border-t border-gray-200 flex flex-col sm:flex-row gap-2">
-            <button className="flex-1 py-2 text-sm bg-transparent border border-[#1A4699] rounded-lg text-black hover:text-blue-500 transition shadow-sm">
+          <div className=" pt-3 border-t border-gray-200 flex flex-row sm:flex-row gap-2">
+            <button className="w-1/3 flex-1 py-2 text-sm bg-transparent border border-[#1A4699] rounded-lg text-black hover:text-blue-500 transition shadow-sm">
               Login
             </button>
-            <button className="flex-1 py-2 text-sm text-white bg-blue-500 rounded-lg hover:bg-[#1A4699] transition shadow-sm">
+            <button className="w-2/3 flex-1 py-2 text-sm text-white bg-[#1A4699] rounded-lg hover:bg-blue-500 transition shadow-sm">
               Sign up, It’s Free
             </button>
           </div>
